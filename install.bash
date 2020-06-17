@@ -19,3 +19,4 @@ bash ${DIR}/tensorflow.bash
 # Tools
 sudo apt-get install -y gparted
 sudo apt-get install -y htop
+sudo pip3 install thefuck  # https://github.com/nvbn/thefuck
