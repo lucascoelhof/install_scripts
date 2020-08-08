@@ -5,18 +5,19 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # First things first
 sudo apt-get update
 
-# Environment
-sudo apt-get install -y terminator
+# ROS
 bash ${DIR}/ros.bash
+bash ${DIR}/ros2.bash
 
-# Development
-sudo apt-get install -y git
-sudo apt install -y python3-pip
+# Dev
+bash ${DIR}/dev.bash
+
+# Tools
+bash ${DIR}/tools.bash
+bash ${DIR}/vs_code.bash
+
+# Fun
+bash ${DIR}/fun.bash
 
 ## Tensorflow
 bash ${DIR}/tensorflow.bash
-
-# Tools
-sudo apt-get install -y gparted
-sudo apt-get install -y htop
-sudo pip3 install thefuck  # https://github.com/nvbn/thefuck
